@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Basic Grocery list app">
+  <meta name="keywords" content="Grocery list app,Best Grocery App">
+  <link rel="stylesheet" href="style.css">
+  <title>Pesto-Grocery List App</title>
+</head>
+<body>
+  <div class="container">
+
+<!-- Sign in form  Start -->
+
+    <div id="signinForm" class="form-wrap" style="display: block;">
+      <h1>Sign-In </h1>
+      <p>Enter your details to signin.</p>
+      
+      <form action="">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter username" name="username">
+        </div>
+       
+       <div class="form-group">
+        <label for="password">Password</label>
+        <input type="text" id="password" placeholder="Enter password" name="password"> 
+       </div>
+        <button id="signin" type="submit">signin</button>
+      </form>
+      <div class="links"><a href="#">Signin</a>&nbsp; |
+        <a href="#">Signup</a></div>
+
+    </div>
+    
+    <!-- Sign in form  end -->
+  <!-- Sign up form  Start -->
+  <div id="registerForm" class="form-wrap" style="display: none;">
+    <h1>Sign-up </h1>
+    <p>Enter your details to Register.</p>
+    <form action="">
+     <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="Rusername"  placeholder="Enter username" name="username">
+     </div>
+      <div class="form-group">
+        <label for="password">password</label>
+      <input type="text" id="Rpassword"  placeholder="Enter password" name="password">
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+      <input type="text"  placeholder="confirm password" name="confirmPassword">
+      </div>
+      <button id="register" type="submit">Register</button>
+    </form>
+    <div class="links">
+      <a href="#">Signin</a>&nbsp; |
+      <a href="#">Signup</a></div>
+
+  </div>
+    <!-- Sign up form  end -->
+
+    <div id="itemForm" class="form-wrap" style="display: none;">
+      <h1>Add Items </h1>
+      <p>Enter the name of the item.</p>
+    <form  action="">
+      <div class="form-group">
+        <label for="item">Item</label>
+      <input type="text" id="itemname"  placeholder="Enter Item Name" name="item">
+      </div>
+   <button id="itemBtn" type="submit">Add</button>
+    </form>
+  
+    <ul id="itemList">
+ 
+    </ul>
+  </div>
+</div>
+</div>
+  <script src="app.js"></script>
+</body>
+</html>
